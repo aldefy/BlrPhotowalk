@@ -1,5 +1,7 @@
 package in.photowalk.blr;
 
+import java.util.Arrays;
+
 import com.facebook.Session;
 import com.facebook.SessionLoginBehavior;
 import com.facebook.SessionState;
@@ -26,12 +28,16 @@ public class MainFBFragment extends Fragment
 	    View view = inflater.inflate(R.layout.fbmain, container, false);
 	    LoginButton authButton = (LoginButton) view.findViewById(R.id.authButton);
 	    authButton.setLoginBehavior(SessionLoginBehavior.SUPPRESS_SSO);
+	    authButton.setReadPermissions(Arrays.asList("user_likes", "user_status"));
 	    authButton.setFragment(this);
+	    
 	    return view;
 	}
 	private void onSessionStateChange(Session session, SessionState state, Exception exception) {
 	    if (state.isOpened()) {
 	        Log.i(TAG, "Logged in...");
+	        Intent i = new Intent(getActivity(), MainActivity.class);
+	        startActivity(i);
 	    } else if (state.isClosed()) {
 	        Log.i(TAG, "Logged out...");
 	    }
@@ -70,6 +76,8 @@ public class MainFBFragment extends Fragment
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 	    super.onActivityResult(requestCode, resultCode, data);
 	    uiHelper.onActivityResult(requestCode, resultCode, data);
+	 
+	    
 	}
 	
 	@Override
