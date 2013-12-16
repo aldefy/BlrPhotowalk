@@ -8,6 +8,9 @@
 package in.photowalk.blr;
 
 public final class R {
+    public static final class array {
+        public static final int feedbacktypelist=0x7f0a0000;
+    }
     public static final class attr {
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -219,7 +222,14 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020020;
     }
     public static final class id {
-        public static final int action_settings=0x7f05001f;
+        public static final int ButtonSendFeedback=0x7f050026;
+        public static final int CheckBoxResponse=0x7f050025;
+        public static final int EditTextEmail=0x7f050022;
+        public static final int EditTextFeedbackBody=0x7f050024;
+        public static final int EditTextName=0x7f050021;
+        public static final int SpinnerFeedbackType=0x7f050023;
+        public static final int TextViewTitle=0x7f050020;
+        public static final int action_settings=0x7f050027;
         public static final int authButton=0x7f05001c;
         public static final int button1=0x7f05001b;
         public static final int com_facebook_login_activity_progress_bar=0x7f050008;
@@ -242,14 +252,15 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f05001a;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f050018;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f050019;
+        public static final int feed=0x7f05001f;
         public static final int imgLogo=0x7f050005;
         public static final int large=0x7f050002;
         public static final int normal=0x7f050001;
         public static final int pager=0x7f050003;
         public static final int pager_title_strip=0x7f050004;
         public static final int picker_subtitle=0x7f050015;
+        public static final int scrollView01=0x7f05001e;
         public static final int small=0x7f050000;
-        public static final int textView1=0x7f05001e;
         public static final int tv=0x7f05001d;
     }
     public static final class layout {
@@ -272,10 +283,10 @@ containing a value of this type.
         public static final int eventsmain=0x7f030010;
         public static final int fbmain=0x7f030011;
         public static final int myfragment_layout=0x7f030012;
-        public static final int photosmain=0x7f030013;
+        public static final int submitmain=0x7f030013;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
+        public static final int main=0x7f0b0000;
     }
     public static final class raw {
         public static final int a=0x7f040000;
@@ -309,6 +320,19 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_log_in_button=0x7f080008;
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f080009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f08000a;
+        public static final int feedbackbody=0x7f080025;
+        public static final int feedbackemail=0x7f080020;
+        public static final int feedbackmessagebody_format=0x7f080028;
+        public static final int feedbackmessagebody_responseno=0x7f08002a;
+        public static final int feedbackmessagebody_responseyes=0x7f080029;
+        public static final int feedbackmessagesubject_format=0x7f080027;
+        public static final int feedbackname=0x7f08001f;
+        public static final int feedbackresponse=0x7f080026;
+        public static final int feedbacktitle=0x7f08001e;
+        public static final int feedbacktype=0x7f080024;
+        public static final int feedbacktype1=0x7f080021;
+        public static final int feedbacktype2=0x7f080022;
+        public static final int feedbacktype3=0x7f080023;
         public static final int hello_world=0x7f08001b;
         public static final int title_facebook_login=0x7f08001d;
     }

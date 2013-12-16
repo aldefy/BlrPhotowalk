@@ -7,6 +7,25 @@
     <string name="app_id">187139678149354</string>
     <string name="title_facebook_login">Facebook Authentication</string>
         
-
+	
+    <string name="feedbacktitle">Submit an Idea or a Feeback</string>
+    <string name="feedbackname">Enter Name</string>
+    <string name="feedbackemail">johndoe@example.com</string>
+    <string name="feedbacktype1">Photowalk Idea</string>
+	<string name="feedbacktype2">Feedback</string>
+	<string name="feedbacktype3">Suggestion</string>
+	<string name="feedbacktype">type</string>
+	<string name="feedbackbody">Enter your idea for a phowotalk andor a feedback/suggestion.</string>
+	<string name="feedbackresponse">Would you like an Email response?</string>
+	
+	<string
+        name="feedbackmessagesubject_format">Application Feedback (%1$s)</string>
+	<string
+        name="feedbackmessagebody_format">To: The %1$s Department\n\n %2$s\n\n %3$s (%4$s) - %5$s
+    </string>	
+	<string
+        name="feedbackmessagebody_responseyes">Requires a response</string>	
+	<string
+        name="feedbackmessagebody_responseno">Does not require a response</string>
 
 </resources>

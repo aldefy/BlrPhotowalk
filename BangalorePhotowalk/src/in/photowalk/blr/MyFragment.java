@@ -2,9 +2,15 @@ package in.photowalk.blr;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class MyFragment extends Fragment 
@@ -26,25 +32,26 @@ public class MyFragment extends Fragment
 	
 	 @Override
 	 public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-	       /*View v = inflater.inflate(R.layout.myfragment_layout, container,false);
-	        TextView tv = (TextView ) v.findViewById(R.id.tv);
-	        tv.setText("You are viewing the page #" + mCurrentPage + "\n\n" + "Swipe Horizontally left / right");
-	        return v;*/
-		 switch(mCurrentPage)
+	       View v = inflater.inflate(R.layout.myfragment_layout, container,false);
+	       
+	        return v;
+		/* switch(mCurrentPage)
 	      {
-	      case 1: 
-	    	  View page1= inflater.inflate(R.layout.photosmain, container,false);
-	    	  return page1;
-	      case 2:
-	    	  View page2=inflater.inflate(R.layout.eventsmain, container,false);
-	    	  return page2;
-	    	  default:
-	    		  View v = inflater.inflate(R.layout.myfragment_layout, container,false);
-				  return v;
+	    case 1: 
+	    	  	View page1= inflater.inflate(R.layout.mainpage1, container,false);
+	    	  		
+	    	        return page1;	
+	    	
+	    	        
+	    	    	  
+	 
+	      default:
+	    		    View v = inflater.inflate(R.layout.myfragment_layout, container,false);
+				    return v;
 	    		  
 	    		  
-	      }
-	    	  
+	      }*/
+		 
 		 
 	    }
 	  
