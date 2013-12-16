@@ -7,11 +7,12 @@ Alpha testing
 
 Things done so Far :
 Integrate Facebook Session Login 
-Take User data for usage 
+Submit an idea or feedback for photowalk
+
 
 Things to apply :
-Get Graph requests for Group news
-Display photos from the group
-Notify of new Events
+Dashboard and RSS feeds to implement
+Articles from site to load
+Push notifications
 
 much more in works
