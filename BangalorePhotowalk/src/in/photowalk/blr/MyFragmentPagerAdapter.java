@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter 
 {
 
-	final int PAGE_COUNT = 4;
+	final int PAGE_COUNT = 2;
 	 /** Constructor of the class */
 	public MyFragmentPagerAdapter(FragmentManager fm) {
 		super(fm);
@@ -20,9 +20,13 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter
 		// TODO Auto-generated method stub
 		switch(arg0)
 		{
-		case 3: 
+		case 0:
+			TalkWalkFragment twalk =new TalkWalkFragment();
+			return twalk;
+		case 1: 
 			SubmitpageFragment submit = new SubmitpageFragment();
 			return submit;
+		
 		
 		
 		default:
@@ -46,13 +50,10 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter
 	    public CharSequence getPageTitle(int position) {
 		 switch (position)
 		 {
+		
 		 case 0:
-			 return "Dashboard" ;
-		 case 1:
-			 return "Latest News" ;
-		 case 2:
 			 return "Talk the walk" ;
-		 case 3: 
+		 case 1: 
 			 return "Submit Feedback or an Idea";
 		 default:
 			 return "Page #" + ( position + 1 );
